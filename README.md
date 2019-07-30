@@ -1,12 +1,14 @@
-PrintThis for Yii2
+PrintThis for Yii Framework 2
+---
 
 forked from Yii2Assets/yii2-print-this
 
----
 Install
 -----
 composer require artsoft/yii2-print-this "dev-master"
+
 or add this line to composer.json
+
 "artsoft/yii2-print-this": "dev-master"
 
 Usage
@@ -18,6 +20,7 @@ echo PrintThis::widget([
 	'htmlOptions' => [
             'id' => ['print_info', 'print_body'],
             'btnOptions' => [
+                'id' => 'btnId',
                 'class' => 'btn btn-default btn-sm',
                 'data-toggle' => 'tooltip',
                 'data-container' => 'body',
@@ -40,18 +43,14 @@ echo PrintThis::widget([
 	]
 ]);
 ?>
----
-More option
-----
-https://github.com/jasonday/printThis
 
 in view file for print area
 ```html
-<div id="PrintThis_1">
+<div id="print_info">
 Your Html code here
 </div>
 ...
-<div id="PrintThis_2">
+<div id="print_body">
 Your Html code here
 </div>
 ```
@@ -66,3 +65,7 @@ you can add css for disable link display
     }
 }
 ```
+---
+More option
+----
+https://github.com/jasonday/printThis
