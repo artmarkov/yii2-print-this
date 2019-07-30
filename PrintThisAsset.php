@@ -1,5 +1,5 @@
 <?php
-namespace yii2assets\printthis;
+namespace artsoft\printthis;
 
 use yii\web\AssetBundle;
 
@@ -9,7 +9,7 @@ class PrintThisAsset extends AssetBundle
 
     public $js = [
         '//code.jquery.com/jquery-migrate-1.3.0.min.js',
-		    'printThis.js',
+        'printThis.js',
 	  ];
 
     public $depends = [

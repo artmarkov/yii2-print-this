@@ -1,5 +1,5 @@
 {
-    "name": "yii2assets/yii2-printthis",
+    "name": "artsoft/yii2-print-this",
     "description": "Print html by selector for Yii Framework 2.0",
     "keywords": ["yii", "yii2", "extension", "print", "html", "PrintThis"],
     "homepage": "https://github.com/Yii2Assets/yii2-print-this",
@@ -10,16 +10,20 @@
             "name": "Manop Kongoon",
             "email": "kongoon@gmail.com",
             "homepage": "https://www.programmerthailand.com/"
+        },
+        {
+            "name": "Artur Markov",
+            "email": "artmarkov@mail.ru"
         }
     ],
     "minimum-stability": "stable",
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/PrintThis": "*"
+        "bower-asset/printThis": "*"
     },
     "autoload": {
         "psr-4": {
-            "yii2assets\\printthis\\": ""
+            "artsoft\\printthis\\": ""
         }
     }
 }

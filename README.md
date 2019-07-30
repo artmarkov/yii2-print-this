@@ -1,10 +1,13 @@
-PrintThis for Yii Framework 2
+PrintThis for Yii2
+
+forked from Yii2Assets/yii2-print-this
+
 ---
 Install
 -----
-composer require yii2assets/yii2-printthis "^1.0"
+composer require artsoft/yii2-print-this "dev-master"
 or add this line to composer.json
-"yii2assets/yii2-printthis": "^1.0"
+"artsoft/yii2-print-this": "dev-master"
 
 Usage
 -----
@@ -13,12 +16,17 @@ To use this widget, insert the following code into a view file:
 <?php
 echo PrintThis::widget([
 	'htmlOptions' => [
-		'id' => 'PrintThis',
-		'btnClass' => 'btn btn-info',
-		'btnId' => 'btnPrintThis',
-		'btnText' => 'พิมพ์หน้านี้',
-		'btnIcon' => 'fa fa-print'
-	],
+            'id' => ['print_info', 'print_body'],
+            'btnOptions' => [
+                'class' => 'btn btn-default btn-sm',
+                'data-toggle' => 'tooltip',
+                'data-container' => 'body',
+                'data-placement' => 'top',
+                'data-original-title' => 'Print',
+            ]
+            'btnText' => 'Print',
+            'btnIcon' => 'fa fa-print'
+        ],
 	'options' => [
 		'debug' => false,
 		'importCSS' => true,
@@ -32,10 +40,18 @@ echo PrintThis::widget([
 	]
 ]);
 ?>
-```
+---
+More option
+----
+https://github.com/jasonday/printThis
+
 in view file for print area
 ```html
-<div id="PrintThis">
+<div id="PrintThis_1">
+Your Html code here
+</div>
+...
+<div id="PrintThis_2">
 Your Html code here
 </div>
 ```
